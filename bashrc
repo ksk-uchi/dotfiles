@@ -129,8 +129,8 @@ JAVA_HOME=/usr/lib/jvm/java-7-oracle/jre
 export JAVA_HOME
 
 # for nodejs
-. ~/.nvm/nvm.sh
-nvm use v0.10.21
+# . ~/.nvm/nvm.sh
+# nvm use v0.10.21
 
 # for mozc
 alias mozc-config="/usr/lib/mozc/mozc_tool -mode=config_dialog"
@@ -139,20 +139,20 @@ alias mozc-dict="/usr/lib/mozc/mozc_tool -mode=dictionary_tool"
 # for PS1
 ## for Git branch name
 if [ -f $BASH_COMPLETION_DIR/git ]; then
-  export PS1="\[\e[1;32m\][\u@ \[\e[1;31m\]\w\[\e[1;32m\]\$(__git_ps1)]\n[\d \t]\$\[\e[00m\] "
+  export PS1="\[\e[1;32m\][\u@\h \[\e[1;31m\]\w\[\e[1;32m\]\$(__git_ps1)]\n[\d \t]\$\[\e[00m\] "
 else
-  export PS1="\[\e[1;32m\][\u@ \[\e[1;31m\]\w\[\e[1;32m\]]\n[\d \t]\$\[\e[00m\] "
+  export PS1="\[\e[1;32m\][\u@\h \[\e[1;31m\]\w\[\e[1;32m\]]\n[\d \t]\$\[\e[00m\] "
 fi
 
 # for skype
-alias reskype=~/reskype.sh
+# alias reskype=~/reskype.sh
 
 # added by travis gem
 [ -f /home/keisuke/.travis/travis.sh ] && source /home/keisuke/.travis/travis.sh
 
 # to kill touch pad
-synclient TouchPadOff=0
+# synclient TouchPadOff=0
 
 # for Go
-export PATH=$PATH:/usr/local/go/bin
-export GOPATH=~/Documents/gitrepo/github/mygo
+# export PATH=$PATH:/usr/local/go/bin
+# export GOPATH=~/Documents/gitrepo/github/mygo

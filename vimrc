@@ -4,7 +4,7 @@ autocmd ColorScheme * highlight Visual ctermbg=DarkGray guibg=#4f4f4f
 autocmd ColorScheme * highlight MatchParen ctermfg=White ctermbg=DarkRed guifg=#dddddd guibg=#8f1010
 " colorscheme zenburn
 colorscheme molokai
-set expandtab
+" set expandtab
 set tabstop=4
 set sw=4
 set textwidth=0
@@ -16,6 +16,7 @@ set ignorecase
 set incsearch
 set hlsearch
 set list
+set listchars=tab:>-,extends:<,trail:-,eol:<
 set backspace=indent,eol,start
 set t_Co=256
 
