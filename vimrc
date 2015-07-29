@@ -1,5 +1,5 @@
 syntax on
-" visual選択を濃い灰色にする
+" visual驕ｸ謚槭ｒ豼�縺�轣ｰ濶ｲ縺ｫ縺吶ｋ
 autocmd ColorScheme * highlight Visual ctermbg=DarkGray guibg=#4f4f4f
 autocmd ColorScheme * highlight MatchParen ctermfg=White ctermbg=DarkRed guifg=#dddddd guibg=#8f1010
 " colorscheme zenburn
@@ -29,12 +29,12 @@ highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 
 " for Git
-set laststatus=2 " ステータスラインを常に表示
+set laststatus=2 " 繧ｹ繝�繝ｼ繧ｿ繧ｹ繝ｩ繧､繝ｳ繧貞ｸｸ縺ｫ陦ｨ遉ｺ
 
 let &statusline = ''
 let &statusline .= '%<%f %h%m%r%w'
 let &statusline .= '%='
-let &statusline .= '%{exists("b:git_branch") &&  b:git_branch != "" ? "[Git:" . b:git_branch . "]" : ""}'  " Gitのブランチ名を表示
+let &statusline .= '%{exists("b:git_branch") &&  b:git_branch != "" ? "[Git:" . b:git_branch . "]" : ""}'  " Git縺ｮ繝悶Λ繝ｳ繝∝錐繧定｡ｨ遉ｺ
 let &statusline .= '[%{&l:fileencoding == "" ? &encoding : &l:fileencoding}]'
 let &statusline .= ' %-14.(%l,%c%V%) %P'
 
@@ -109,4 +109,5 @@ function! s:my_tabline()  "{{{
   return s
 endfunction "}}}
 let &tabline = '%!'. s:SID_PREFIX() . 'my_tabline()'
-set showtabline=1 " タブがあればタブラインを表示
+set showtabline=1 " 繧ｿ繝悶′縺ゅｌ縺ｰ繧ｿ繝悶Λ繧､繝ｳ繧定｡ｨ遉ｺ
+#hogehoge
